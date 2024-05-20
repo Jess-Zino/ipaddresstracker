@@ -7,7 +7,7 @@ import { useState} from 'react';
 function App() {
   const [searchIP, newSearchIp] = useState('')
   const [ipDetails, newIPDetails]= useState({
-    ip: '192.168.122.174',
+    ip: '192.16.122.14',
     city: 'Brooklyn',
     region: 'NY',
     country: 'US',
@@ -72,7 +72,7 @@ function App() {
         </div>
        
       </header>
-      <Map location={[ipDetails.lat,ipDetails.long]}></Map>
+      <Map location={[ipDetails.lat,ipDetails.long]} style={{display:"flex", justifyContent:"center", alignItems:"center"}}></Map>
     </>
   )
 
